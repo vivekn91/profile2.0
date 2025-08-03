@@ -1,0 +1,80 @@
+{
+  "profile_image_base64": "<BASE64_STRING>",
+  "name": "Alex Morgan",
+  "role": "Software Engineering Manager",
+  "city": "Town City",
+  "phone": "123.456.7891",
+  "mail": "alex.morgan@email.com",
+  "linkedin": "https://linkedin.com/in/alexmorgan",
+  "professional_profile": "Experienced Software Engineering Manager with 10+ years in leading cross-functional teams, delivering large-scale enterprise applications, and driving digital transformation. Proven track record in mentoring engineers, architecting robust solutions, and fostering a culture of innovation and excellence.",
+  "expertise": [
+    { "name": "Team Leadership", "percentage": 90 },
+    { "name": "Software Architecture", "percentage": 85 },
+    { "name": "Cloud Computing", "percentage": 80 },
+    { "name": "DevOps & CI/CD", "percentage": 75 },
+    { "name": "Agile & Scrum", "percentage": 90 },
+    { "name": "Technical Hiring", "percentage": 80 }
+  ],
+  "education": [
+    {
+      "degree": "M.S. Computer Science",
+      "institution": "Stanford University",
+      "years": "2010 - 2012",
+      "notes": "Focused on advanced algorithms and scalable systems."
+    },
+    {
+      "degree": "B.S. Software Engineering",
+      "institution": "University of Washington",
+      "years": "2006 - 2010",
+      "notes": "Specialized in distributed computing and team projects."
+    },
+    {
+      "degree": "AWS Certified Solutions Architect",
+      "institution": "Amazon Web Services",
+      "years": "2021",
+      "notes": ""
+    },
+    {
+      "degree": "PMP Certified",
+      "institution": "PMI Institute",
+      "years": "2022",
+      "notes": ""
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Engineering Manager",
+      "company": "TechNova Corp",
+      "location": "San Francisco, CA",
+      "years": "2020–Present",
+      "description": "Lead a team of 15 engineers delivering cloud-native solutions for Fortune 500 clients. Improved delivery velocity by 30% via process optimization and team development.",
+      "bullets": [
+        "Mentored and coached engineers for career growth and technical excellence.",
+        "Architected scalable microservices and optimized CI/CD pipelines.",
+        "Collaborated with stakeholders to align technology with business goals."
+      ]
+    },
+    {
+      "title": "Lead Software Engineer",
+      "company": "InnovateX",
+      "location": "Seattle, WA",
+      "years": "2015–2020",
+      "description": "Architected and shipped mission-critical applications, collaborating with product and design teams. Mentored junior developers and established code quality standards.",
+      "bullets": [
+        "Designed and implemented REST APIs and scalable backend systems.",
+        "Set coding standards and reviewed code for quality and security."
+      ]
+    },
+    {
+      "title": "Senior Developer",
+      "company": "CodeSphere Solutions",
+      "location": "Remote",
+      "years": "2012–2015",
+      "description": "Built scalable backend systems and contributed to open-source projects. Recognized for outstanding performance and teamwork.",
+      "bullets": [
+        "Developed distributed systems and optimized database queries.",
+        "Collaborated in open-source initiatives and knowledge sharing."
+      ]
+    }
+  ]
+}

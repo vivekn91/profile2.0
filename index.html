@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Vivekanandan Natarajan - Senior Software Engineering Manager</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #f5f6fa;
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.10);
+      border-radius: 10px;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .header {
+      background: #225382;
+      color: #fff;
+      padding: 2.5rem 2rem 1.25rem 2rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .profile-pic {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      background: #e6eef3;
+      box-shadow: 0 2px 8px rgba(0,0,0,.10);
+    }
+    .header-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .header-details h1 {
+      margin: 0;
+      font-size: 2.7rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .header-details h2 {
+      margin: .5rem 0 1rem 0;
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+    .header-contact {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 1.05rem;
+      margin-top: .5rem;
+      flex-wrap: wrap;
+    }
+    .header-contact a, .header-contact span {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color .2s;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .header-contact a:hover {
+      color: #aeeaff;
+      text-decoration: underline;
+    }
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      justify-content: space-between;
+      font-size: 1rem;
+    }
+    .left-panel, .right-panel {
+      flex: 1 1 300px;
+      min-width: 270px;
+    }
+    .section-title {
+      color: #225382;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: .7rem;
+      letter-spacing: 1px;
+      border-bottom: 2px solid #225382;
+      display: inline-block;
+      padding-bottom: 2px;
+    }
+    .expertise-list {
+      margin: .3rem 0 1.2rem 0;
+      padding: 0;
+      list-style: none;
+    }
+    .expertise-item {
+      margin-bottom: 1rem;
+    }
+    .expertise-label {
+      font-weight: 500;
+      color: #225382;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .expertise-bar-bg {
+      background: #e6eef3;
+      border-radius: 6px;
+      height: 7px;
+      position: relative;
+      width: 100%;
+      margin-bottom: 2px;
+    }
+    .expertise-bar {
+      background: #225382;
+      height: 7px;
+      border-radius: 6px;
+      width: var(--bar-width, 70%);
+    }
+    .education-list {
+      margin: .3rem 0 1.2rem 0;
+      padding: 0;
+      list-style: none;
+    }
+    .education-item {
+      margin-bottom: 1.1rem;
+    }
+    .education-degree {
+      font-weight: 700;
+      color: #225382;
+    }
+    .education-college {
+      font-weight: 500;
+      color: #444;
+      margin-bottom: 2px;
+    }
+    .education-years {
+      font-size: .98rem;
+      color: #888;
+      margin-bottom: 2px;
+    }
+    .profile-section {
+      margin-bottom: 1.6rem;
+    }
+    .profile-section p {
+      margin: 0;
+      color: #333;
+      font-size: 1.06rem;
+      line-height: 1.5;
+    }
+    .experience-list {
+      margin: 0 0 1rem 0;
+      padding: 0;
+      list-style: none;
+    }
+    .experience-item {
+      margin-bottom: 1.3rem;
+    }
+    .exp-job-title {
+      font-weight: 700;
+      color: #225382;
+      font-size: 1.07rem;
+    }
+    .exp-company {
+      font-weight: 500;
+      color: #444;
+      margin-bottom: 2px;
+    }
+    .exp-years {
+      font-size: .98rem;
+      color: #888;
+      margin-bottom: 2px;
+    }
+    .exp-desc {
+      color: #333;
+      margin-bottom: 5px;
+      font-size: 1.02rem;
+    }
+    .exp-bullets {
+      margin: .3rem 0 0 .8rem;
+      padding: 0;
+      font-size: .99rem;
+      color: #333;
+    }
+    .exp-bullets li {
+      margin-bottom: 3px;
+    }
+    @media (max-width: 900px) {
+      .main-content {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+      }
+      .header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem 1rem 1rem 1rem;
+      }
+      .left-panel, .right-panel {
+        min-width: 200px;
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        border-radius: 0;
+      }
+      .header-details h1 {
+        font-size: 2rem;
+      }
+      .header-details h2 {
+        font-size: 1rem;
+      }
+      .main-content {
+        padding: .7rem;
+      }
+      .profile-pic {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+  <script>
+    // Load profile.json and inject data
+    fetch('profile.json')
+      .then(response => response.json())
+      .then(profile => {
+        // Profile Picture
+        document.querySelector('.profile-pic').src = 'data:image/png;base64,' + profile.profile_image_base64;
+        // Name, Role
+        document.querySelector('.header-details h1').textContent = profile.name;
+        document.querySelector('.header-details h2').textContent = profile.role;
+        // Contact Info
+        let contactHtml = '';
+        if (profile.city) contactHtml += `<span>📍 ${profile.city}</span>`;
+        if (profile.phone) contactHtml += `<span>📞 <a href="tel:${profile.phone}">${profile.phone}</a></span>`;
+        if (profile.mail) contactHtml += `<span>✉️ <a href="mailto:${profile.mail}">${profile.mail}</a></span>`;
+        if (profile.linkedin) contactHtml += `<span>💼 <a href="${profile.linkedin}" target="_blank">LinkedIn</a></span>`;
+        document.querySelector('.header-contact').innerHTML = contactHtml;
+        // Professional Profile
+        document.querySelector('.profile-section p').textContent = profile.professional_profile;
+        // Expertise
+        let expertiseHtml = '';
+        profile.expertise.forEach(exp => {
+          expertiseHtml += `
+            <li class="expertise-item">
+              <span class="expertise-label">${exp.name}</span>
+              <div class="expertise-bar-bg"><div class="expertise-bar" style="width:${exp.percentage}%"></div></div>
+            </li>`;
+        });
+        document.querySelector('.expertise-list').innerHTML = expertiseHtml;
+        // Education
+        let educationHtml = '';
+        profile.education.forEach(edu => {
+          educationHtml += `<li class="education-item">
+            <span class="education-degree">${edu.degree}</span><br>
+            <span class="education-college">${edu.institution}</span><br>
+            <span class="education-years">${edu.years}</span><br>
+            <span>${edu.notes || ''}</span>
+          </li>`;
+        });
+        document.querySelector('.education-list').innerHTML = educationHtml;
+        // Experience
+        let experienceHtml = '';
+        profile.experience.forEach(exp => {
+          experienceHtml += `<li class="experience-item">
+            <div class="exp-job-title">${exp.title}</div>
+            <div class="exp-company">${exp.company} | ${exp.location} | ${exp.years}</div>
+            <div class="exp-desc">${exp.description}</div>
+            <ul class="exp-bullets">
+            ${exp.bullets.map(b => `<li>${b}</li>`).join('')}
+            </ul>
+          </li>`;
+        });
+        document.querySelector('.experience-list').innerHTML = experienceHtml;
+      });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="" alt="Profile Picture" class="profile-pic">
+      <div class="header-details">
+        <h1></h1>
+        <h2></h2>
+        <div class="header-contact"></div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="left-panel">
+        <div class="section-title">Professional Profile</div>
+        <div class="profile-section">
+          <p></p>
+        </div>
+        <div class="section-title">Expertise</div>
+        <ul class="expertise-list"></ul>
+        <div class="section-title">Education</div>
+        <ul class="education-list"></ul>
+      </div>
+      <div class="right-panel">
+        <div class="section-title">Experience</div>
+        <ul class="experience-list"></ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
